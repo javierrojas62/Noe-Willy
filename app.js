@@ -1,3 +1,16 @@
+// Animación de sobre al inicio
+window.addEventListener('DOMContentLoaded', function() {
+    var overlay = document.getElementById('envelope-overlay');
+    if (overlay) {
+        setTimeout(function() {
+            overlay.style.opacity = '0';
+            overlay.style.pointerEvents = 'none';
+            setTimeout(function() {
+                overlay.style.display = 'none';
+            }, 700);
+        }, 2200);
+    }
+});
 // Funcionalidades interactivas para la invitación de casamiento
 
 document.addEventListener('DOMContentLoaded', function() {
