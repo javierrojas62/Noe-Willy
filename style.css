@@ -1,3 +1,23 @@
+/* Botón copiar para Alias y CBU */
+.copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 2px 4px;
+    vertical-align: middle;
+    transition: background 0.2s;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+}
+.copy-btn:hover, .copy-btn.copied {
+    background: #f3e7d8;
+}
+.copy-btn svg {
+    display: inline-block;
+    vertical-align: middle;
+}
 /* Reset y configuración base */
 * {
     margin: 0;
@@ -200,15 +220,16 @@ body {
 
 
 
+
 /* Sección de cita */
 .quote-section {
     text-align: center;
     padding: 60px 30px;
-    background: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(120deg, #fff5ec 80%, #dda0dd 100%);
     margin: 40px 20px;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(139, 79, 107, 0.1);
+    border: 1.5px solid #f3e7d8;
+    box-shadow: 0 2px 10px rgba(139, 79, 107, 0.06);
 }
 
 blockquote {
@@ -228,13 +249,15 @@ cite {
 }
 
 /* Detalles del evento */
+
 .event-details {
     text-align: center;
     padding: 60px 30px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.95));
+    background: linear-gradient(135deg, #fff5ec 80%, #f8d7da 100%);
     margin: 30px 20px;
     border-radius: 20px;
-    border: 1px solid rgba(139, 79, 107, 0.1);
+    border: 1.5px solid #f3e7d8;
+    box-shadow: 0 2px 10px rgba(139, 79, 107, 0.06);
 }
 
 .event-details h3 {
@@ -325,13 +348,15 @@ cite {
 }
 
 /* Sección de regalos */
+
 .gifts-section {
     text-align: center;
     padding: 60px 30px;
-    background: rgba(139, 79, 107, 0.05);
+    background: linear-gradient(120deg, #fff5ec 80%, #f3e7d8 100%);
     margin: 30px 20px;
     border-radius: 20px;
-    border: 1px solid rgba(139, 79, 107, 0.1);
+    border: 1.5px solid #f3e7d8;
+    box-shadow: 0 2px 10px rgba(139, 79, 107, 0.06);
 }
 
 .gifts-section p {
@@ -348,14 +373,14 @@ cite {
     font-weight: 700;
 }
 
+
 .bank-details {
-    background: white;
+    background: linear-gradient(120deg, #fff5ec 80%, #f3e7d8 100%);
     padding: 30px;
     border-radius: 15px;
     margin: 30px 0;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    border: 1px solid rgba(139, 79, 107, 0.1);
-    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(139, 79, 107, 0.08);
+    border: 1.5px solid #f3e7d8;
     transition: all 0.3s ease;
 }
 
@@ -371,30 +396,35 @@ cite {
 }
 
 /* Sección de música */
-.music-section {
+
+/* Sección Spotify actualizada */
+
+.spotify-section {
     text-align: center;
     padding: 50px 30px;
-    background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(139, 79, 107, 0.1));
+    background: linear-gradient(135deg, #fff5ec 80%, #dda0dd 100%);
     margin: 30px 20px;
     border-radius: 15px;
+    border: 1.5px solid #f3e7d8;
+    box-shadow: 0 2px 10px rgba(139, 79, 107, 0.06);
 }
 
-.music-section p {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-.music-section h3 {
+.spotify-section h3 {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     color: #d4a574;
-    margin: 20px 0 30px;
+    margin: 20px 0 18px;
     font-weight: 700;
 }
 
-.music-button {
-    background: linear-gradient(45deg, #d4a574, #8b4f6b);
+.spotify-section p {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.spotify-button {
+    background: linear-gradient(45deg, #1DB954, #8b4f6b);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -404,24 +434,49 @@ cite {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Cormorant Garamond', serif;
-    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.3);
+    box-shadow: 0 5px 15px rgba(30, 215, 96, 0.18);
+    text-decoration: none;
+    display: inline-block;
 }
 
-.music-button:hover {
+.spotify-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(212, 165, 116, 0.4);
+    box-shadow: 0 8px 20px rgba(30, 215, 96, 0.28);
+    background: linear-gradient(45deg, #1DB954, #d4a574);
 }
 
 /* Sección RSVP */
+
 .rsvp-section {
     text-align: center;
     padding: 60px 30px;
-    background: linear-gradient(135deg, #8b4f6b, #d4a574);
-    color: white;
+    background: linear-gradient(135deg, #8b4f6b 80%, #d4a574 100%);
+    color: #fff5ec;
     margin: 40px 20px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    border: 1.5px solid #f3e7d8;
+    box-shadow: 0 2px 10px rgba(139, 79, 107, 0.08);
+}
+/* Flor decorativa solo al inicio */
+.floral-img-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: auto;
+    z-index: 10;
+    transform: none;
+}
+.floral-img-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: auto;
+    z-index: 10;
+    transform: scaleX(-1);
 }
 
 .decorative-floral-bottom {
@@ -583,7 +638,7 @@ cite {
         box-shadow: none;
     }
     
-    .event-details, .gifts-section, .rsvp-section, .music-section {
+    .event-details, .gifts-section, .rsvp-section, .spotify-section {
         margin: 20px 10px;
         padding: 40px 20px;
     }

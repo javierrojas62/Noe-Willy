@@ -14,7 +14,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="position:relative;">
+        <!-- Flor decorativa arriba derecha -->
+        <img src="./recursos/flor.avif" alt="Flor decorativa" class="floral-img-top">
+        <!-- Flor decorativa abajo izquierda (espejada) -->
+        <img src="./recursos/flor.avif" alt="Flor decorativa" class="floral-img-bottom">
         <!-- Header Section -->
         <header class="header">
             <div class="logo-section">
@@ -52,6 +56,11 @@
                         <span class="countdown-label">segundos</span>
                     </div>
                 </div>
+
+            </div>
+            <!-- Imagen decorativa debajo del contador -->
+            <div class="my-4 text-center">
+                <img src="./recursos/2.png" alt="Decoración" class="img-fluid rounded shadow" style="max-width: 100%; height: auto; border-radius: 15px;">
             </div>
         </section>
 
@@ -119,25 +128,43 @@
             <div class="bank-details">
                 <p><strong>Nombre:</strong> Noelia Belen Martinez</p>
                 <p><strong>Banco:</strong> Brubank</p>
-                <p><strong>Alias:</strong> bodanyw</p>
-                <p><strong>CBU:</strong> 1430001713030100330019</p>
+                <p><strong>Alias:</strong> bodanyw
+                    <button class="copy-btn" data-copy="bodanyw" title="Copiar alias">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;">
+                            <rect x="8" y="8" width="12" height="12" rx="2" stroke="#8b4f6b" stroke-width="2"/>
+                            <rect x="4" y="4" width="12" height="12" rx="2" stroke="#d4a574" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </p>
+                <p><strong>CBU:</strong> 1430001713030100330019
+                    <button class="copy-btn" data-copy="1430001713030100330019" title="Copiar CBU">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;">
+                            <rect x="8" y="8" width="12" height="12" rx="2" stroke="#8b4f6b" stroke-width="2"/>
+                            <rect x="4" y="4" width="12" height="12" rx="2" stroke="#d4a574" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </p>
                 <p><strong>Nº de cuenta:</strong> 1303010033001</p>
                 <p><strong>CUIT:</strong> 27-37506444-3</p>
             </div>
         </section>
 
-        <!-- Music Request -->
-        <section class="music-section">
-            <p>¡La fiesta la hacemos entre todos!</p>
-            <h3>¿qué tema no puede faltar?</h3>
-            <a class="music-button" href="https://open.spotify.com/playlist/7y9jvxNntdjLfpY1jKUGSF?si=6e2e202c7639449d"
-                target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none;">
-                <svg style="vertical-align:middle;margin-right:8px;" width="22" height="22" viewBox="0 0 496 512">
-                    <path fill="#1DB954"
-                        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.7 365.4c-5.3 8.8-16.6 11.6-25.4 6.3-69.7-42.6-157.5-52.2-261.1-28.3-10.1 2.3-20.2-4.1-22.5-14.2-2.3-10.1 4.1-20.2 14.2-22.5 112.2-25.2 208.9-14.2 286.2 32.1 8.8 5.3 11.6 16.6 6.3 25.4zm35.2-61.2c-6.6 10.7-20.7 14.1-31.3 7.5-79.7-49-201.6-63.3-296.2-34.3-12 3.7-24.9-3-28.6-15-3.7-12 3-24.9 15-28.6 106.6-32.5 238.6-17.1 327.2 39.2 10.7 6.6 14.1 20.7 7.5 31.2zm38.5-68.5c-8.2 13.2-25.6 17.4-38.8 9.2-91.2-56.2-229.8-61.2-313.2-33.2-14.5 4.8-30.2-3.2-35-17.8-4.8-14.5 3.2-30.2 17.8-35 93.6-31 244.2-25.2 348.2 37.1 13.2 8.2 17.4 25.6 9.2 38.7z" />
-                </svg>
-                Agregar canción a la playlist
+
+        <!-- Spotify Playlist Section -->
+        <section class="spotify-section">
+            <h3>¡Ayudanos a armar la playlist de la fiesta!</h3>
+            <p>Podés sumar tus temas favoritos a la lista de música. 🎶</p>
+            <a 
+                href="https://open.spotify.com/playlist/7y9jvxNntdjLfpY1jKUGSF?si=74cd577f56d646a9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="spotify-button"
+            >
+                Agregar canciones a la playlist
             </a>
+            <br><br>
+            <!-- Playlist embed (solo para escuchar) -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7y9jvxNntdjLfpY1jKUGSF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </section>
 
         <!-- RSVP Section -->
@@ -146,7 +173,7 @@
             <div class="decorative-floral-bottom"></div>
             <p>Para nosotros es fundamental saber si contamos o no con tu presencia.</p>
             <p><strong>¡No te olvides de confirmarnos!</strong></p>
-            <a href="https://wa.me/5492646275358?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Nombre1%20y%20Nombre2.%20¡Nos%20vemos%20pronto!"
+            <a href="https://wa.me/5492646275358?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20al%20casamiento%20de%20Noe%20&%20Willy.%20¡Nos%20vemos%20pronto!"
                 target="_blank" rel="noopener noreferrer">
                 <button class="confirm-button" id="confirmButton">Confirmar Asistencia</button>
             </a>
