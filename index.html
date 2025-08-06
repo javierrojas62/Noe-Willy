@@ -14,32 +14,6 @@
 </head>
 
 <body>
-    <!-- Animación de sobre al inicio -->
-    <div id="envelope-overlay" style="position:fixed;z-index:99999;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.97);display:flex;align-items:center;justify-content:center;transition:opacity 0.7s;">
-        <div style="display:flex;flex-direction:column;align-items:center;">
-            <svg id="envelope-svg" width="320" height="240" viewBox="0 0 320 240" style="margin-bottom:2.2rem;">
-                <!-- Sombra -->
-                <ellipse cx="160" cy="220" rx="90" ry="18" fill="#d2c5b0" opacity="0.35"/>
-                <!-- Cuerpo del sobre -->
-                <rect x="40" y="80" width="240" height="100" rx="18" fill="#D4AF37" stroke="#8B7355" stroke-width="4"/>
-                <!-- Solapa -->
-                <polygon points="40,80 160,25 280,80" fill="#fff" stroke="#8B7355" stroke-width="4"/>
-                <!-- Detalle interior -->
-                <polyline points="40,80 160,170 280,80" fill="none" stroke="#8B7355" stroke-width="4"/>
-                <!-- Corazón animado -->
-                <g>
-                  <animateTransform attributeName="transform" type="scale" values="1;1.13;1" keyTimes="0;0.5;1" dur="1.2s" repeatCount="indefinite"/>
-                  <path d="M160 120
-                    c-10-18 -38-18 -38 8
-                    c0 18 38 38 38 38
-                    s38-20 38-38
-                    c0-26 -28-26 -38-8z"
-                    fill="#e63946" stroke="#8B7355" stroke-width="2"/>
-                </g>
-            </svg>
-            <div style="font-family:'Playfair Display',serif;font-size:2.2rem;color:#8B7355;font-weight:700;letter-spacing:2px;text-shadow:0 2px 8px #fff,0 1px 0 #d2c5b0;">Invitación</div>
-        </div>
-    </div>
     <div class="container">
         <!-- Header Section -->
         <header class="header">
@@ -52,7 +26,6 @@
                 <h1 class="name">Noe</h1>
             </div>
         </header>
-
         <!-- Main Invitation -->
         <section class="main-invitation">
             <h2 class="invitation-text">NOS CASAMOS Y NOS ENCANTARÍA CONTAR<br>CON TU PRESENCIA EN ESTE DÍA TAN ESPECIAL
@@ -82,34 +55,50 @@
             </div>
         </section>
 
-        <!-- Decorative Floral Images -->
-        <div class="decorative-images">
-            <div class="floral-left-img"></div>
-            <div class="floral-right-img"></div>
-        </div>
 
-        <!-- Video Section -->
-        <section class="video-section">
-            <div class="play-button">Dale play!</div>
-        </section>
 
         <!-- Quote Section -->
         <section class="quote-section">
             <blockquote>
-                "Andábamos sin buscarnos,<br>
-                pero sabiendo que andábamos para encontrarnos"
+                "El amor es el resultado del deseo de ser uno solo y, sin embargo, seguir siendo dos."
             </blockquote>
-            <cite>Julio Cortázar</cite>
+            <cite>Sigmund Freud</cite>
         </section>
+
 
         <!-- Event Details -->
         <section class="event-details">
-            <h3>Ceremonia y Fiesta</h3>
-            <p class="event-date">Te esperamos el día<br><strong>5 de Diciembre de 2025</strong><br>a las 19:00 hs. en
+            <h3>Ceremonia</h3>
+            <p class="event-date">Te esperamos el<br><strong>5 de Diciembre de 2025</strong><br>a las 21:30 hs. en
             </p>
             <div class="venue">
-                <h4>El Horizonte</h4>
-                <address>Moron 433 Sur, Marquesado,<br>Rivadavia, San Juan</address>
+                <h4>Parroquia Medalla Milagrosa
+                </h4>
+                <div style="margin:10px 0 0 0;">
+                    <a href="https://maps.app.goo.gl/25Aj9LGVzripaGpK9" target="_blank" rel="noopener noreferrer" title="Ver en Google Maps">
+                        <img src="./recursos/maps.png" alt="Google Maps" style="width:38px;height:38px;object-fit:contain;display:inline-block;vertical-align:middle;filter: drop-shadow(0 2px 4px rgba(0,0,0,0.10));">
+                    </a>
+                </div>
+                </h4>
+                <address>Brasil Oeste 2536<br>Rivadavia</address>
+            </div>
+            <p class="adults-only">Si bien adoramos los niños,<br>esta invitación es sólo para adultos.</p>
+        </section>
+
+        <section class="event-details">
+            <h3>Civil y Fiesta</h3>
+            <p class="event-date">Te esperamos a partir de las 22:30 hs. en
+            </p>
+            <div class="venue">
+                <h4>Salon Kawin
+                </h4>
+                <div style="margin:10px 0 0 0;">
+                    <a href="https://maps.app.goo.gl/s6vhM787tCxMe4YD8" target="_blank" rel="noopener noreferrer" title="Ver en Google Maps">
+                        <img src="./recursos/maps.png" alt="Google Maps" style="width:38px;height:38px;object-fit:contain;display:inline-block;vertical-align:middle;filter: drop-shadow(0 2px 4px rgba(0,0,0,0.10));">
+                    </a>
+                </div>
+                </h4>
+                <address>Hipólito Yrigoyen Este 3845 Este<br>Santa Lucia</address>
             </div>
             <p class="adults-only">Si bien adoramos los niños,<br>esta invitación es sólo para adultos.</p>
         </section>
@@ -118,7 +107,7 @@
         <section class="dress-code">
             <div class="dress-code-icon"></div>
             <h3>Dress Code</h3>
-            <p>Nuestro código de vestimenta será:<br><strong>Total Black</strong></p>
+            <p>Nuestro código de vestimenta será:<br><strong>Estrictamente formal</strong></p>
             <p class="bride-note">Los colores blancos/nudes<br>son exclusividad de la novia.</p>
         </section>
 
@@ -141,7 +130,14 @@
         <section class="music-section">
             <p>¡La fiesta la hacemos entre todos!</p>
             <h3>¿qué tema no puede faltar?</h3>
-            <button class="music-button" id="musicButton">Recomendar Música</button>
+            <a class="music-button" href="https://open.spotify.com/playlist/7y9jvxNntdjLfpY1jKUGSF?si=6e2e202c7639449d"
+                target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none;">
+                <svg style="vertical-align:middle;margin-right:8px;" width="22" height="22" viewBox="0 0 496 512">
+                    <path fill="#1DB954"
+                        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.7 365.4c-5.3 8.8-16.6 11.6-25.4 6.3-69.7-42.6-157.5-52.2-261.1-28.3-10.1 2.3-20.2-4.1-22.5-14.2-2.3-10.1 4.1-20.2 14.2-22.5 112.2-25.2 208.9-14.2 286.2 32.1 8.8 5.3 11.6 16.6 6.3 25.4zm35.2-61.2c-6.6 10.7-20.7 14.1-31.3 7.5-79.7-49-201.6-63.3-296.2-34.3-12 3.7-24.9-3-28.6-15-3.7-12 3-24.9 15-28.6 106.6-32.5 238.6-17.1 327.2 39.2 10.7 6.6 14.1 20.7 7.5 31.2zm38.5-68.5c-8.2 13.2-25.6 17.4-38.8 9.2-91.2-56.2-229.8-61.2-313.2-33.2-14.5 4.8-30.2-3.2-35-17.8-4.8-14.5 3.2-30.2 17.8-35 93.6-31 244.2-25.2 348.2 37.1 13.2 8.2 17.4 25.6 9.2 38.7z" />
+                </svg>
+                Agregar canción a la playlist
+            </a>
         </section>
 
         <!-- RSVP Section -->
@@ -150,16 +146,13 @@
             <div class="decorative-floral-bottom"></div>
             <p>Para nosotros es fundamental saber si contamos o no con tu presencia.</p>
             <p><strong>¡No te olvides de confirmarnos!</strong></p>
-            <button class="confirm-button" id="confirmButton">Confirmar Asistencia</button>
+            <a href="https://wa.me/5492646275358?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Nombre1%20y%20Nombre2.%20¡Nos%20vemos%20pronto!"
+                target="_blank" rel="noopener noreferrer">
+                <button class="confirm-button" id="confirmButton">Confirmar Asistencia</button>
+            </a>
         </section>
 
-        <!-- Save the Date -->
-        <section class="save-date">
-            <div class="decorative-floral-save"></div>
-            <h3>Save the Date</h3>
-            <p>¡Guardá esta fecha en tu google calendar!</p>
-            <button class="calendar-button" id="calendarButton">Agregar al Calendario</button>
-        </section>
+
 
         <!-- Footer -->
         <footer class="footer">
