@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
 /* Evita que el navegador muestre azul/subrayado en números detectados como links */
 .no-link, .no-link a, .no-link span, .no-link strong {
     color: inherit !important;
@@ -94,7 +97,7 @@ body {
 }
 
 .name {
-    font-family: 'Great Vibes', cursive;
+    font-family: "Lavishly Yours", cursive;
     font-size: 4.5rem;
     font-weight: 400;
     color: #8b4f6b;
