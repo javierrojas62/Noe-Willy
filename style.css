@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rouge+Script&display=swap');
 
 /* Evita que el navegador muestre azul/subrayado en números detectados como links */
 .no-link, .no-link a, .no-link span, .no-link strong {
@@ -97,7 +98,7 @@ body {
 }
 
 .name {
-    font-family: "Lavishly Yours", cursive;
+    font-family: "Rouge Script", cursive;
     font-size: 4.5rem;
     font-weight: 400;
     color: #8b4f6b;
@@ -131,10 +132,10 @@ body {
 }
 
 .date-main {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.8rem;
+    font-family: "Rouge Script", cursive;
+    font-size: 4rem;
     color: #8b4f6b;
-    font-weight: 700;
+    font-weight: 400;
     margin: 30px 0;
 }
 
