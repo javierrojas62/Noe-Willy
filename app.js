@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('days').textContent = days.toString().padStart(2, '0');
         document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
         document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
     }
     
     // Actualizar contador cada segundo
@@ -171,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const days = parseInt(document.getElementById('days').textContent);
         const hours = parseInt(document.getElementById('hours').textContent);
         const minutes = parseInt(document.getElementById('minutes').textContent);
-        const seconds = parseInt(document.getElementById('seconds').textContent);
         
         if (days !== lastDays) {
             document.getElementById('days').classList.add('animate');
@@ -185,15 +183,10 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('minutes').classList.add('animate');
             setTimeout(() => document.getElementById('minutes').classList.remove('animate'), 500);
         }
-        if (seconds !== lastSeconds) {
-            document.getElementById('seconds').classList.add('animate');
-            setTimeout(() => document.getElementById('seconds').classList.remove('animate'), 500);
-        }
         
         lastDays = days;
         lastHours = hours;
         lastMinutes = minutes;
-        lastSeconds = seconds;
     }
 
     // Verificar cambios en contador cada segundo
